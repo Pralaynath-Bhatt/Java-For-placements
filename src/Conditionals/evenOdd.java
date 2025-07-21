@@ -13,6 +13,5 @@ public class evenOdd {
         else {
             System.out.println("Its Odd");
         }
-            System.out.println(1==1);
     }
 }
