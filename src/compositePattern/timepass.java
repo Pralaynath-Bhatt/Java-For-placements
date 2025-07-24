@@ -12,10 +12,80 @@ public class timepass {
         //starBridge();//hw
         //testpattern();
         //numberBridge();
-        diamond();
+        //diamond();
+        //numberSpiral();
+        reverseNumberSpiral();
+
 
     }
 
+    private static void reverseNumberSpiral() {
+
+//        5 5 5 5 5 5 5 5 5
+//        5 4 4 4 4 4 4 4 5
+//        5 4 3 3 3 3 3 4 5
+//        5 4 3 2 2 2 3 4 5
+//        5 4 3 2 1 2 3 4 5
+//        5 4 3 2 2 2 3 4 5
+//        5 4 3 3 3 3 3 4 5
+//        5 4 4 4 4 4 4 4 5
+//        5 5 5 5 5 5 5 5 5
+
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        for (int i = n; i > 0; i--) {
+            for (int j =n; j > 0; j--) {
+                System.out.print(Math.max(i,j)+" ");
+            }
+            for(int j=2; j<=n; j++) {
+                System.out.print(Math.max(i,j)+" ");
+            }
+            System.out.println();
+        }
+        for (int i = 2; i <= n; i++) {
+            for (int j =n; j > 0; j--) {
+                System.out.print(Math.max(i,j)+" ");
+            }
+            for(int j=2; j<=n; j++) {
+                System.out.print(Math.max(i,j)+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void numberSpiral() {
+
+//        1 1 1 1 1 1 1 1 1
+//        1 2 2 2 2 2 2 2 1
+//        1 2 3 3 3 3 3 2 1
+//        1 2 3 4 4 4 3 2 1
+//        1 2 3 4 5 4 3 2 1
+//        1 2 3 4 4 4 3 2 1
+//        1 2 3 3 3 3 3 2 1
+//        1 2 2 2 2 2 2 2 1
+//        1 1 1 1 1 1 1 1 1
+
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print(Math.min(i,j)+" ");
+            }
+            for (int j = n-1; j>0; j--) {
+                System.out.print(Math.min(i,j)+" ");
+            }
+            System.out.println();
+        }
+        for (int i = n-1; i >0; i--) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print(Math.min(i,j)+" ");
+            }
+            for (int j = n-1; j>0; j--) {
+                System.out.print(Math.min(i,j)+" ");
+            }
+            System.out.println();
+        }
+    }
     private static void diamond() {
         //          *
         //        * * *
