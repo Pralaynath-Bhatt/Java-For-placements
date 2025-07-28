@@ -1,4 +1,5 @@
-package arrays;
+package DSA.arrays;
+
 import java.util.Scanner;
 
 public class tp {

@@ -1,4 +1,4 @@
-package Conditionals;
+package Basic.Conditionals;
 
 import java.util.Scanner;
 class AbsoluteValue {

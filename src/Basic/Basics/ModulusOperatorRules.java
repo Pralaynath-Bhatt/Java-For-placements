@@ -1,4 +1,4 @@
-package Basics;
+package Basic.Basics;
 
 public class ModulusOperatorRules {
     public static void main(String[] args) {

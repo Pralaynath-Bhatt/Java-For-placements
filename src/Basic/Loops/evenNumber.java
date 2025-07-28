@@ -1,4 +1,4 @@
-package Loops;
+package Basic.Loops;
 import java.util.Scanner;
 
 public class evenNumber {

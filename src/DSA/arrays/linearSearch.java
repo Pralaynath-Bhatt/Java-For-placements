@@ -1,4 +1,4 @@
-package arrays;
+package DSA.arrays;
 
 import org.w3c.dom.ls.LSOutput;
 

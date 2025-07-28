@@ -1,4 +1,4 @@
-package Basics;
+package Basic.Basics;
 
 import java.sql.SQLOutput;
 
