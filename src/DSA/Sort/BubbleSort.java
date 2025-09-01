@@ -2,16 +2,19 @@ package DSA.Sort;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] arr ={5,4,3,2,1};
+        int[] arr ={3,1,2,4,5};
         int n = arr.length;
         System.out.println("Before sorting ");
         printArr(arr);
         for (int j = 0; j < n-1; j++) {
-            for(int i = 0; i < n-1; i++) {
+            boolean flag = true;
+            for(int i = 0; i < n-1-j; i++) {
                 if(arr[i]>arr[i+1]){
                     swap(arr,i,i+1);
+                    flag = false;
                 }
             }
+            if(flag) break;
         }
         System.out.println();
         printArr(arr);
