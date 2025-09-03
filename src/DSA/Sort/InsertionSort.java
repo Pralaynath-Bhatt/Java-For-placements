@@ -20,20 +20,17 @@ public class InsertionSort {
         }
     }
     public static void main(String[] args) {
-        int[] arr = {3,4,2,1,5};
+        int[] arr = {5,4,3,2,1};
         int n = arr.length;
         print(arr);
         int mindex;
         for (int i = 1; i < n; i++) {
             mindex=i;
-            for(int j = i-1;j>=0; j--) {
-                if(arr[mindex]<arr[j]){
+            for(int j = i-1;((j>=0)&&(arr[mindex]<arr[j])); j--) {
                     int temp =arr[mindex];
                     arr[mindex]=arr[j];
                     arr[j]=temp;
                     mindex=j;
-                }
-                else break;
             }
         }
         print(arr);
