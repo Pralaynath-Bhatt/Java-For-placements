@@ -22,8 +22,11 @@ public class reverse {
             l--;
         }
         System.out.println();
-        for(int ele: arr){
-            System.out.print(ele+ " ");
+        print(arr);
+    }
+    private static void print(int[] arr) {
+        for(int elm: arr){
+            System.out.print(elm+" ");
         }
     }
 }
