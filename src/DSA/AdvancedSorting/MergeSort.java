@@ -1,6 +1,9 @@
 package DSA.AdvancedSorting;
 
+import java.util.ArrayList;
+
 public class MergeSort {
+    static int[] arr=new int[10];
     public static void main(String[] args) {
 
         print(arr);
