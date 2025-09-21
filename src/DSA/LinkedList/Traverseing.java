@@ -9,6 +9,19 @@ public class Traverseing {
             temp=temp.next;
         }
     }
+
+    public static void printRecursive(Node head){
+        if(head==null) return;
+        System.out.println(head.value);
+        printRecursive(head.next);
+
+    }
+    public static void printRecursiveReverse(Node head){
+        if(head==null) return;
+        printRecursiveReverse(head.next);
+        System.out.println(head.value);
+    }
+
     public static void main(String[] args) {
         Node a= new Node(10);
         Node b= new Node(20);
@@ -21,7 +34,7 @@ public class Traverseing {
         c.next=d;
         d.next=e;
         e.next=f;
-        print(a);
+        printRecursive(a);
 
     }
 }
