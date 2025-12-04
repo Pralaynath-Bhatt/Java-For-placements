@@ -34,5 +34,6 @@ public class InsertionSort {
             }
         }
         print(arr);
+        System.out.println("hii");
     }
 }
