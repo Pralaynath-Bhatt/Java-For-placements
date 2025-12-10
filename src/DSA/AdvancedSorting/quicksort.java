@@ -8,7 +8,7 @@ public class quicksort {
         System.out.println();
     }
     static void main() {
-        int[] arr ={9,8,7,6,5,4,3,2,1};
+        int[] arr ={1,3,5,7,95,2,78,33,9};
         print(arr);
         quick(arr,0,arr.length-1);
         print(arr);
