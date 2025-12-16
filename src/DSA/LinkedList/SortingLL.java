@@ -62,6 +62,6 @@ public class SortingLL {
         while(merged!=null){
             System.out.print(merged.value+" ");
             merged=merged.next;
-        }
+        }//adding for test
     }
 }
